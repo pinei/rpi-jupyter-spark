@@ -2,6 +2,20 @@
 
 An attempt to build a Docker image for running JupyterLab and PySpark with all dependencies pre-installed
 
+## How to
+
+Build:
+
+```
+docker build --platform linux/arm64/v8 -t rpi-jupyter-lab .
+```
+
+Run:
+
+```
+docker run -p 8888:8888 rpi-jupyter-lab
+```
+
 ## Running a default image for Jupyter Lab
 
 ```
