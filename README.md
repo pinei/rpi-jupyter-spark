@@ -2,6 +2,12 @@
 
 An attempt to build a Docker image for running JupyterLab and PySpark with all dependencies pre-installed
 
+## Running a default image for Jupyter Lab
+
+```
+docker run -it -p 10000:8888 --network host -e JUPYTER_ENABLE_LAB=yes jupyter/scipy-notebook
+```
+
 ## References
 
 - Docker images
